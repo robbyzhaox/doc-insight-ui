@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build:local": "NODE_ENV=local next build",
+    "build:prod": "NODE_ENV=prod next build",
+    "start:local": "NODE_ENV=local next start",
+    "start:prod": "NODE_ENV=prod next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit"
   },
