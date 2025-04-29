@@ -20,7 +20,7 @@ export const extractDocument = async (
   template: string
 ): Promise<ExtractionResult> => {
   try {
-    const response = await fetch(`${API_BASE_URL}/ocr-json`, {
+    const response = await fetch(`${API_BASE_URL}/ocr`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ 
